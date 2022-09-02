@@ -42,13 +42,14 @@ class ViewController: UIViewController {
         }
     }
  
-    
+    //getBodyWeight 
     @IBAction func getBodyweight(_ sender: Any) {
         let start = Calendar.current.date(byAdding: .month, value: -48, to: Date())
         let end = Date()
         let predicate = HKQuery.predicateForSamples(withStart: start, end: end)
         let sampleType = HKQuantityType.quantityType(forIdentifier: .bodyMass)!
         
+        // use query
         let query = HKSampleQuery(
             sampleType: sampleType,
             predicate: predicate,
