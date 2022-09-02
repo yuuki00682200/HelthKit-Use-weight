@@ -1,0 +1,6 @@
+framework module Pods_Test_HealthKit_weight {
+  umbrella header "Pods-Test-HealthKit-weight-umbrella.h"
+
+  export *
+  module * { export * }
+}
